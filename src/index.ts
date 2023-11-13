@@ -1,5 +1,7 @@
 /* exercicio 7*/
 
+import { log } from "console";
+
 type Funcionario = {
   nome: string;
   idade: number;
@@ -43,6 +45,7 @@ const usuario2: Todos = {
   ocupacao: 'Analista de TI',
   comissionamento: 5,
 };
+
 
 imprimirDetalhes(usuario1);
 imprimirDetalhes(usuario2);

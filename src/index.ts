@@ -1,10 +1,4 @@
-
-
-
-
-
 /* exercicio 7*/
-
 
 type Funcionario = {
   nome: string;
@@ -15,7 +9,7 @@ type Funcionario = {
 };
 
 type Diretor = {
-  comissionamento: number;
+  comissionamento?: number;
 };
 
 type Todos = Funcionario & Diretor;
@@ -40,8 +34,7 @@ const usuario1: Funcionario = {
   nome: 'Maria',
   idade: 25,
   ocupacao: 'Designer',
-  salario: 50000,
-  comissionamento: 0, 
+  salario: 50000
 };
 
 const usuario2: Todos = {

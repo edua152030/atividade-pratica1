@@ -6,7 +6,7 @@ type Funcionario = {
   nome: string;
   idade: number;
   ocupacao: string;
-  comissionamento: number;
+  comissionamento?: number;
   salario?: number;
 };
 
@@ -32,14 +32,14 @@ function imprimirDetalhes(user: Todos): void {
   }
 }
 
-const usuario1: Funcionario = {
+const usuario1ex7: Funcionario = {
   nome: 'Maria',
   idade: 25,
   ocupacao: 'Designer',
   salario: 50000
 };
 
-const usuario2: Todos = {
+const usuario2ex7: Todos = {
   nome: 'Eduardo',
   idade: 40,
   ocupacao: 'Analista de TI',
@@ -47,5 +47,5 @@ const usuario2: Todos = {
 };
 
 
-imprimirDetalhes(usuario1);
-imprimirDetalhes(usuario2);
+imprimirDetalhes(usuario1ex7);
+imprimirDetalhes(usuario2ex7);
